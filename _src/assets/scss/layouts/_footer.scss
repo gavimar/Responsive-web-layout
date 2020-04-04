@@ -1,0 +1,142 @@
+.page{
+&_footer{
+    background-color: #304268;
+    height: 465px;
+    position: relative;
+
+    @include forTablet{
+        
+        height: 240px;
+
+    } 
+    
+
+    .footer-container{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        color:white;
+        justify-content: space-evenly;
+        
+        font-family: $font-body;
+        font-size: 16px;
+        height: 100%;
+
+            @include forTablet{
+                flex-direction: row;
+                justify-content: space-between;
+                align-content: center;
+                
+
+                & :first-child{order:2;}
+                & :nth-child(2){order:3;}
+                & :last-child{order:1;}
+                text-align: left; 
+       
+            }
+
+            @include forPC{
+                justify-content: center;
+                
+            }
+        
+
+        nav {
+            ul {
+            
+            margin:0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            li{
+                flex: auto ;
+
+                a{
+                    padding:10px;
+                }
+
+            }
+          }
+
+         
+        }
+       
+
+    }
+
+    .button-up{
+        position: absolute;
+        width:45px;
+        top: -22.5px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+
+        img{
+            -webkit-transition: -webkit-transform .8s ease-in-out;
+            transition:         transform .8s ease-in-out;
+        &:hover{
+            
+            transform: rotate(360deg)
+        }
+    }
+
+    
+
+    }
+
+
+        
+
+
+    .menu-pages{
+        
+        text-transform: uppercase;
+        
+
+        .list1{
+            height: 150px;
+        }
+        
+        @include forTablet{
+            width: 210px;
+        }
+       
+    }
+
+    .menu-social{
+        
+        text-transform: uppercase;
+
+        .list2{
+            height: 90px;
+        }
+
+        @include forTablet{
+            width: 210px;
+        }
+    }
+
+    .footer-footer{
+        height: 60px;
+
+        p{
+            margin:0;
+            padding:0;
+        }
+
+        .heart{
+            color:red;
+            text-transform: none;
+        }
+
+        @include forTablet{
+            width: 210px;
+        }
+    }
+}
+
+
+}

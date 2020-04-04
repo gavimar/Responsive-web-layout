@@ -1,0 +1,106 @@
+.page{
+    &_hero{
+        
+        position:relative;
+        z-index: 2 ;
+        background: url(../images/cover.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+        height: 100vh;
+        
+        
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+        .container{
+            color:$color-hero;
+            // text-align: center;
+            
+            
+            
+            
+            
+            h1{
+                text-transform: uppercase;
+                font-family: $font-primary;
+                font-size: 42px;
+
+                @include forTablet{
+                    font-size: 80px;
+                }
+
+                @include forPC{
+                    font-size: 100px;
+                }
+            }
+        }
+
+        .title-container{
+            height: 110px;
+            
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // margin-top: 50%;
+
+            @include forTablet{
+                height: 212px;
+                width:690px;
+                
+            }
+
+            @include forPC{
+                // margin-top: 40%;
+            }
+           
+
+        }
+
+        .low-container{
+            height: 21px;
+            padding:0;
+            
+            margin-bottom: 40%;
+            h3{
+                font-family: $font-body;
+                font-size: 16px;
+                }
+            @include forTablet{
+                height: 32px;
+                width:360px;
+                // margin-bottom: 30%;
+                
+                    h3{
+                        font-size: 24px;
+                        
+                    }
+                }
+                @include forPC{
+                    
+                    margin-bottom: 10%;
+                }
+            
+        }
+
+        .button{
+            position:absolute;
+            bottom: 7%;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+
+            @include forPC{
+                margin-bottom: -2%;
+            }
+        }
+        
+    }
+    
+    
+}

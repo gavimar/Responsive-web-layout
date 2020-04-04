@@ -1,0 +1,119 @@
+.page{
+    &_article{
+        
+        height: 360px;
+
+        @include forTablet{
+            height: 330px;
+        }
+
+       
+        
+
+        .container-article1{
+            text-align: left;
+            padding:0;
+            margin-top: 30px;
+            height: 30px;
+            // width: 690px;
+            
+            
+            h4{
+                color:#8ccbea;
+                font-family: $font-body;
+                font-size: 14px;
+                margin:0;
+                padding:0;
+
+                @include forPC{
+                    
+                    font-size: 16px;
+                }
+                
+                
+            }
+        }
+
+        .container-article2{
+            color:$color-title;
+            text-align: left;
+            padding:0;
+            height: 60px;
+            
+
+            h2{
+                margin:0;
+                padding:0;
+                text-transform: capitalize;
+                font-family: $font-primary;
+                font-size: 24px;
+
+                @include forTablet{
+                    font-size: 26px;
+                }
+
+                @include forPC{
+                    font-size: 32px;
+                }
+            }
+        }
+
+        .container-article3{
+            margin-top: 15px;
+            height: 120px;
+            padding:0;
+            text-align: justify;
+            
+
+                p{
+                    font-family: $font-body;
+                    font-size: 18px;
+
+                    @include forTablet{
+                        font-size: 20px;
+                    }
+                }
+            
+                @include forTablet{
+                    height: 60px;
+                }
+
+        }
+
+        .container-article4{
+            text-align: left;
+            padding: 0;
+            margin-top: 30px;
+            margin-bottom: 45px;
+            
+
+            .button-go{
+                border-radius: 22.5px;
+                background-color: white;
+                color: $color-button;
+                border: solid $color-button 2px;
+                width: 76px;
+                height: 45px;
+                font-size: 20px;
+                font-family: $font-body;
+                font-weight: 500;
+                transition:2s ease;
+                &:hover {
+                    background-color:$color-button;
+                    color: white;
+                }
+
+                @include forTablet{
+                    width: 95px;
+                    margin-bottom: auto;
+                }
+
+                @include forPC{
+                    width: 130px;
+                    
+                }
+            }
+        }
+    }
+
+}

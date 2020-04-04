@@ -1,0 +1,24 @@
+.page{
+    &_header{
+        position:fixed;
+        z-index: 3;
+        
+        .top-menu{
+        
+        
+        background-color: blue;
+        width: 44px;
+        height: 44px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+            .img-menu{
+                width: 14px;
+                height: 16px;
+            }
+
+        }
+
+    }
+}
